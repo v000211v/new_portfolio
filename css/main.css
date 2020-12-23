@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  height: 100px;
+  position: fixed;
+  width: 93%;
+}
+
+.header .list {
+  display: flex;
+}
+
+.header .list li {
+  font-size: 20px;
+  color: #909090;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 40px;
+}
+
+.main_section {
+  display: flex;
+}
+
+.main_section .left {
+  background: url(../images/bg/bg01.png) no-repeat center / cover;
+  height: 100vh;
+  width: 50%;
+}
+
+.main_section .right {
+  float: right;
+  padding-top: 100px;
+}
+
+.profile {
+  padding: 50px;
+  display: flex;
+}
+
+.profile_pic {
+  width: 380px;
+  height: 414px;
+  background: tomato;
+  margin: 0 80px;
+}
