@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -33,6 +39,8 @@
 .main_section .right {
   float: right;
   padding-top: 100px;
+  width: 50%;
+  max-width: 1200px;
 }
 
 .profile {
@@ -44,5 +52,68 @@
   width: 380px;
   height: 414px;
   background: tomato;
-  margin: 0 80px;
+  margin: 0 40px;
+}
+
+.profile_txt {
+  font-size: 22px;
+  font-weight: 700;
+  color: #737373;
+}
+
+.profile_txt p {
+  margin-top: 30px;
+  padding-right: 20px;
+}
+
+.my_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list_span span {
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: #c4c4c4;
+  border-radius: 50%;
+}
+
+.list_span .full {
+  background: #6d6d6d;
+}
+
+.list_span .ps_span,
+.ai_span,
+.fg_span {
+  display: flex;
+  align-items: center;
+}
+
+.list_span span {
+  margin: 40px 20px 0px;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.7;
+  margin: 0 100px;
+  padding-top: 50px;
+  color: #737373;
+  position: relative;
+}
+
+.contact {
+  position: absolute;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+#modal {
+  background: #fff;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
 }
