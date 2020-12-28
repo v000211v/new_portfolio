@@ -37,14 +37,12 @@ body {
 }
 
 .main_section .right {
-  float: right;
   padding-top: 100px;
   width: 50%;
-  max-width: 1200px;
 }
 
 .profile {
-  padding: 50px;
+  padding: 20px;
   display: flex;
 }
 
@@ -96,10 +94,10 @@ body {
 }
 
 .text {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 1.7;
-  margin: 0 100px;
+  margin: 0 60px;
   padding-top: 50px;
   color: #737373;
   position: relative;
@@ -111,9 +109,149 @@ body {
   text-transform: uppercase;
 }
 
+/* contact */
+
+#modal .dismiss {
+  position: absolute;
+  font-size: 35px;
+  color: #737373;
+  top: 20px;
+  right: 20px;
+}
+
 #modal {
+  position: relative;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
   background: #fff;
   width: 50%;
-  height: 50%;
+  height: 80vh;
+  padding: 50px;
   margin: 0 auto;
+}
+
+#modal .content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 460px;
+  color: #777;
+}
+
+#modal .content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 46px;
+}
+
+.gform {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gform label {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.gform input,
+.gform textarea {
+  display: block;
+  width: 90%;
+  padding: 18px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: 2px solid #ddd;
+  background: #ffff;
+  outline: none;
+  color: rgb(49, 49, 49);
+  transition: background, border 0.5s;
+}
+
+.gform input::placeholder,
+.gform textarea::placeholder {
+  color: #777;
+  transition: all 0.5s;
+}
+
+.gform input:focus,
+.gform textarea:focus {
+  border: 2px solid #fff;
+  background: rgb(220, 238, 255);
+}
+
+.gform input:focus::placeholder,
+.gform textarea:focus::placeholder {
+  color: transparent;
+}
+
+.gform textarea {
+  resize: vertical;
+}
+
+.btn {
+  background: #555;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* dimm, modal */
+.dimm {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 10000;
+}
+
+.dimm i {
+  font-size: 60px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dimm.active {
+  display: block;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.modal span {
+  display: block;
+  font-size: 60px;
+}
+
+.modal p {
+  padding: 20px;
 }
