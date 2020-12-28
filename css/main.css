@@ -12,6 +12,7 @@ body {
   height: 100px;
   position: fixed;
   width: 93%;
+  z-index: 1000;
 }
 
 .header .list {

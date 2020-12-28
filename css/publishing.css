@@ -6,8 +6,69 @@
   margin: 0 40px;
 }
 
-.content {
+.container01 {
   background: url(../images/fullpage/fullpage01.png) no-repeat center / cover;
   height: 100vh;
   width: 100%;
+  position: relative;
+}
+
+.container02 {
+  background: url(../images/fullpage/fullpage02.png) no-repeat center / cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.typing-txt {
+  display: none;
+}
+
+ul {
+  color: #fff;
+  list-style: none;
+}
+
+.typing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  line-height: 1.5;
+}
+
+.typing ul .title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.typing ul .txt {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.typing ul li {
+  display: block;
+}
+
+.typing ul li.on {
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
 }
